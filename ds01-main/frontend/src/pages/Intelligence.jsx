@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = "https://cryptovista-backend.onrender.com";
 
 export default function Intelligence() {
   const [selectedCoin, setSelectedCoin] = useState("btc");
@@ -60,11 +60,11 @@ export default function Intelligence() {
             </div>
           </div>
 
-          <div className="intelligence-grid" style={{ 
-            display: "grid", 
-            gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", 
-            gap: "1.5rem", 
-            marginBottom: "3rem" 
+          <div className="intelligence-grid" style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+            gap: "1.5rem",
+            marginBottom: "3rem"
           }}>
             <div style={{ background: "rgba(6, 182, 212, 0.05)", padding: "1.5rem", borderRadius: "12px", border: "1px solid rgba(6, 182, 212, 0.15)" }}>
               <span style={{ color: "var(--text-muted)", fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "0.05em" }}>Momentum</span>
