@@ -11,7 +11,7 @@ import {
 
 import CoinOverview from "./CoinOverview";
 
-const API_BASE = "https://cryptovista-backend.onrender.com";
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "https://cryptovista-backend.onrender.com";
 
 /* -------------------------------------------------
    Coin Configuration

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API_BASE = "https://cryptovista-backend.onrender.com";
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "https://cryptovista-backend.onrender.com";
 
 export default function Intelligence() {
   const [selectedCoin, setSelectedCoin] = useState("btc");
